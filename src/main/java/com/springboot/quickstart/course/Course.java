@@ -18,7 +18,15 @@ public class Course {
     @ManyToOne
     private Topic topic;
 
-    public Course(String courseId, String s, String s1) {
+
+    public Course() {
+    }
+
+    public Course(String id, String name, String description) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.description = description;
     }
 
     public Course(String id, String name, String description, String topicId) {
